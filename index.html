@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Cash Register</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="text-center spacer">Cash Register</h1>
+      <div class="row">
+        <form name="register" action="#" method="GET" id="register">
+          <div class="form-group">
+            <label for="register">How many of each bill is currently in the register?</label>
+            <div class="col-sm-12">
+              <label for="">Hundreds</label>
+              <input type="text" placeholder="Hundreds" id="Hundreds" value="13">
+            </div>
+            <div class="col-sm-12">
+              <label for="">Twenties</label>
+              <input type="text" placeholder="Twenties" id="Twenties" value="0">
+            </div>
+            <div class="col-sm-12">
+              <label for="">Tens</label>
+              <input type="text" placeholder="Tens" id="Tens" value="0">
+            </div>
+            <div class="col-sm-12">
+              <label for="">Fives</label>
+              <input type="text" placeholder="Fives" id="Fives" value="0">
+            </div>
+            <div class="col-sm-12">
+              <label for="">Ones</label>
+              <input type="text" placeholder="Ones" id="Ones" value="32">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <form name="register" action="#" method="GET">
+          <div class="form-group">
+            <label class="spacer" for="register">How many of each coin?</label>
+            <div class="col-sm-12">
+              <label for="">Quarters</label>
+              <input type="text" placeholder="Quarters" id="Quarters" value="0">
+            </div>
+            <div class="col-sm-12">
+              <label for="">Dimes</label>
+              <input type="text" placeholder="Dimes" id="Dimes" value="16">
+            </div>
+            <div class="col-sm-12">
+              <label for="">Nickels</label>
+              <input type="text" placeholder="Nickels" id="Nickels" value="0">
+            </div>
+            <div class="col-sm-12">
+              <label for="">Pennies</label>
+              <input type="text" placeholder="Pennies" id="Pennies" value="132">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <form name="given" action="stillForget" method="GET">
+          <label class="spacer" for="given">How much cash is given?</label>
+            <div class="col-sm-12">
+              <input type="text" placeholder="$0.00" id="given">
+            </div>
+        </form>
+      </div>
+      <div class="row">
+        <form name="price" action="#" method="GET">
+          <label class="spacer" for="given">What is the price of the items?</label>
+          <div class="col-sm-12">
+            <input type="text" placeholder="$0.00" id="price">
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div id="results">
+
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn btn-primary btn-lg spacer" type="submit">Find change!</button>
+      </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>
+    <script src="styles/app.js"></script>
+  </body>
+</html>
